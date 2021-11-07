@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Generador de contraseñas | Elian Gomez</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<link rel="stylesheet" href="css/estilos.css">
+	<link rel="stylesheet" href="fontawesome/css/all.min.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+		crossorigin="anonymous"></script>
+</head>
+
+<body>
+	<div class="container">
+		<div class="logo">
+			<h1>Elian Gomez | 2017-5001</h1>
+		</div>
+		<form action="" class="app" id="app">
+			<div class="fila numero-caracteres">
+				<div class="col">
+					<label for="numero-caracteres">Numero de caracteres:</label>
+				</div>
+				<div class="col botones">
+					<div>
+						<button class="btn btn-success" id="btn-menos-uno"><i class="fas fa-minus"></i></button>
+					</div>
+					<div>
+						<input type="text" class="bg-dark" id="numero-caracteres" readonly value="12">
+					</div>
+					<div>
+						<button class="btn btn-success" id="btn-mas-uno"><i class="fas fa-plus"></i></button>
+					</div>
+				</div>
+			</div>
+			<div class="fila simbolos">
+				<div class="col">
+					<label for="simbolos">¿Incluir Simbolos?</label>
+				</div>
+				<div class="col">
+					<button class="btn btn-success" id="btn-simbolos"><i class="fas fa-check"></i></button>
+				</div>
+			</div>
+			<div class="fila numeros">
+				<div class="col">
+					<label for="numeros">¿Incluir Numeros?</label>
+				</div>
+				<div class="col">
+					<button class="btn btn-success" id="btn-numeros"><i class="fas fa-check"></i></button>
+				</div>
+			</div>
+			<div class="fila mayusculas">
+				<div class="col">
+					<label for="mayusculas">¿Incluir Mayusculas?</label>
+				</div>
+				<div class="col">
+					<button class="btn btn-success" id="btn-mayusculas"><i class="fas fa-check"></i></button>
+				</div>
+			</div>
+			<div class="fila generar">
+				<div class="col">
+					<button class="btn btn-success btn-generar" id="btn-generar">Generar <i
+							class="fas fa-lock"></i></button>
+				</div>
+				<div class="col">
+					<input type="text" class="input-password bg-dark" id="input-password" readonly value="T3sT">
+				</div>
+			</div>
+			<div class="fila alerta">
+				<div class="col">
+					<div class="alerta-copiado bg-dark" id="alerta-copiado">
+						<p><i class="fas fa-copy"></i> Texto Copiado!</p>
+					</div>
+				</div>
+			</div>
+		</form>
+		<div class="creditos">
+			<p>Da un clic en el campo para copiar la contraseña</p>
+			<p>Creado por Elian A. Gomez Garcia</p>
+		</div>
+	</div>
+
+	<script src="js/app.js"></script>
+</body>
+
+</html>
